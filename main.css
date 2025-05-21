@@ -1,0 +1,102 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  color: #333;
+}
+
+/* Center the content and set a max width */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Page title */
+.siteheader {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Title text */
+h1 {
+  font-size: 2rem;
+  color: #222;
+}
+
+/* Grid layout: 2 cards per row */
+.emojis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Emoji card style */
+.emoji {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 350px;
+}
+
+/* Emoji icon */
+.icon {
+  font-size: 48px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Card title */
+.emoji h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Description */
+.emoji p {
+  flex-grow: 1;
+  margin: 10px 0;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Button */
+.emoji a {
+  margin-top: auto;
+  padding: 12px;
+  background-color: #8000ff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  display: block;
+}
+
+/* Button hover */
+.emoji a:hover {
+  background-color: #5e00b2;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .emojis {
+    grid-template-columns: 1fr;
+  }
+}
